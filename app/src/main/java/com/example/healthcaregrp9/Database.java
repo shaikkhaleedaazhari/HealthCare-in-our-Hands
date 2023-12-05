@@ -64,6 +64,7 @@ public class Database extends SQLiteOpenHelper {
         cv.put("product", product);
         cv.put("price", price);
         cv.put("otype", otype);
+
         SQLiteDatabase db = getWritableDatabase();
         db.insert("cart", null, cv);
         db.close();
